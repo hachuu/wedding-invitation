@@ -1,4 +1,5 @@
 import Headers from "../components/Header";
+import Maps from "../components/Maps";
 import styled from 'styled-components';
 import { css } from 'styled-components';
 
@@ -51,6 +52,8 @@ const Page = () => {
                 <Box></Box>
                 <Box></Box>
             </BoxContainer>
+            maps 나와야 하는디
+            <Maps></Maps>
         </div>
     )
 }

@@ -12,8 +12,8 @@ const Context = styled.div`
     margin: 100px 0;
     top: 0px;
     z-index: 5;
-    font-size: 35px;
-    font-family: 'Nanum Pen Script', cursive;
+    font-size: 20px;
+    font-family: 'Helvetica Neue', cursive;
 `;
 const BoxContainer = styled.div`
     margin: 300px 0 0 0;

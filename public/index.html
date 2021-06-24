@@ -28,12 +28,14 @@
   </head>
   <body>
     <div async id="root"></div>
-    <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1ebe378c90f3cc5418f812f22c2fd9d6"></script> -->
 
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey="+process.env.REACT_APP_KAKAO_API_KEY></script>
+    <script type="text/javascript" id="kakaoMapScript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey="+process.env.REACT_APP_KAKAO_API_KEY></script>
     <script>
       window.onload = function(){
+        // const kakaoMapScript = document.getElementById('kakaoMapScript');
+        // kakaoMapScript.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.REACT_APP_KAKAO_API_KEY}`;
         var container = document.getElementById('map');
+
         var options = {
           center: new kakao.maps.LatLng(37.46621315156307, 127.0326723986652),
           level: 3

@@ -53,6 +53,7 @@ const Page = () => {
                 <Box></Box>
             </BoxContainer>
             maps 나와야 하는디
+            {/* <script type="text/javascript" id="kakaoMapScript" src={'//dapi.kakao.com/v2/maps/sdk.js?appkey='+process.env.REACT_APP_KAKAO_API_KEY}></script> */}
             <Maps></Maps>
         </div>
     )

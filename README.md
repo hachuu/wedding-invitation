@@ -72,3 +72,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### 개발 TIL 
 2021/05/09 [리액트 반응형 모듈 사용하기(react-responsive)](https://twojobui.tistory.com/25)
+
+2021/06/27 
+- index.html에서 환경변수 직접 접근하는 방법 '%여기 변수값%'
+[React | 환경 변수 설정하기 (create-react-app)](https://gaemi606.tistory.com/entry/React-%ED%99%98%EA%B2%BD-%EB%B3%80%EC%88%98-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0-create-react-app)
+- [Ignore 파일 등록했지만 여전히 충돌 해결 안됨](http://codershigh.dscloud.biz:30004/t/ignore/541)
+```
+git rm -r --cached .
+git add .
+git commit -m "fixed untracked files"
+```

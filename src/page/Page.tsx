@@ -3,6 +3,11 @@ import Maps from "../components/Maps";
 import styled from 'styled-components';
 import { css } from 'styled-components';
 
+const PageContainer = styled.div`
+height:1000px;
+overflow:scroll
+`;
+
 const Context = styled.div`
     display: flex;
     position: fixed;
@@ -38,7 +43,7 @@ const Box = styled.div`
     
 const Page = () => {
     return (
-        <div>
+        <PageContainer>
             <Headers></Headers>
             <Context>
                 <div>
@@ -55,7 +60,7 @@ const Page = () => {
             maps 나와야 하는디
             {/* <script type="text/javascript" id="kakaoMapScript" src={'//dapi.kakao.com/v2/maps/sdk.js?appkey='+process.env.REACT_APP_KAKAO_API_KEY}></script> */}
             <Maps></Maps>
-        </div>
+        </PageContainer>
     )
 }
 

@@ -3,13 +3,24 @@ import styled from 'styled-components';
 const Maps = () => {
 
     const Map = styled.div`
-        width: 200px;
-        height: 200px;
+        
+        width: 250px;
+        height: 250px;
     `;
+    // position: fixed;
+    const MapContainer = styled.div`
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: 100px 0;
+        width: 100%;
+    `
 
 
     return (
-        <Map id="map"></Map>
+        <MapContainer>
+            <Map id="map"></Map>
+        </MapContainer>
     )
 }
 

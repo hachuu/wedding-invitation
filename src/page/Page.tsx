@@ -13,24 +13,25 @@ const Context = styled.div`
     position: fixed;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    height: 200px;
     width: 100%;
     margin: 100px 0;
     top: 0px;
     z-index: 5;
     font-size: 20px;
     font-family: 'Helvetica Neue', cursive;
+    flex-direction: column;
 `;
 const BoxContainer = styled.div`
-    margin: 300px 0 0 0;
+    margin: 400px 0 0 0;
     display: flex;
 `;
 const Box = styled.div`
     width: 100px;
-    height: 100px;
-    border: 1px solid #AEB7E6;
-    transition: ;
-    :hover {
+    height: 150px;
+    border: 1px solid white;
+    transition:  all 0.3s linear;
+    &:hover {
         transform: scale(2);
     };
 `;
@@ -40,25 +41,54 @@ const Box = styled.div`
     //     `
     // };
     // background: rgba(174, 183, 230, 0.7);
+const FirstImg = styled.img`
+    width: 100%;
+    height:100%;
+`;
+
+const Lettering = styled.div`
+    font-family: 'Nanum Pen Script', cursive;
+    font-weight: normal;
+    font-style: normal;
+    font-size:30px;
+`;
+
+    const Date = styled.div`
+    font-family: 'Nanum Pen Script', cursive;
+    font-weight: normal;
+    font-style: normal;
+    font-size:20px;
+`;
+    // src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+
+
     
 const Page = () => {
     return (
         <PageContainer>
+            <style>
+            @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+</style>
             <Headers></Headers>
             <Context>
-                <div>
-                    김태희 그리고 정지훈
-                </div>
+                <Date>
+                    05/28
+                </Date>
+                <Lettering>
+                    정성원 그리고 송하영
+                </Lettering>
+                <Lettering>
+                    결혼합니다 
+                </Lettering>
             </Context>
             <BoxContainer>
-                <Box></Box>
-                <Box></Box>
-                <Box></Box>
-                <Box></Box>
-                <Box></Box>
+                <Box><FirstImg src="/images/couple/laos.jpg"/></Box>
+                <Box><FirstImg src="/images/couple/v.jpg"/></Box>
+                <Box><FirstImg src="/images/couple/ring.jpg"/></Box>
+                <Box><FirstImg src="/images/couple/night.jpg"/></Box>
+                <Box><FirstImg src="/images/couple/thailand.jpg"/></Box>
             </BoxContainer>
-            maps 나와야 하는디
-            {/* <script type="text/javascript" id="kakaoMapScript" src={'//dapi.kakao.com/v2/maps/sdk.js?appkey='+process.env.REACT_APP_KAKAO_API_KEY}></script> */}
+            <script type="text/javascript" id="kakaoMapScript" src={'//dapi.kakao.com/v2/maps/sdk.js?appkey='+process.env.REACT_APP_KAKAO_API_KEY}></script>
             <Maps></Maps>
         </PageContainer>
     )

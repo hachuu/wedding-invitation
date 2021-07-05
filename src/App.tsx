@@ -16,7 +16,6 @@ function App() {
       </MediaQuery> */}
       { isMobile ? <Page></Page>
       : <p>Mobile화면으로 봐주세요</p>}
-      
     </div>
   );
 }

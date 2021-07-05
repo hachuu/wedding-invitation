@@ -29,7 +29,7 @@ const Wrapper = styled.div`
 const Header = () => {
     return (
     <Wrapper>
-        Wedding card
+        Wedding Invitation
     </Wrapper>
 )};
 

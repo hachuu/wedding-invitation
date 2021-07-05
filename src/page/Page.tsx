@@ -1,16 +1,17 @@
 import Headers from "../components/Header";
 import Maps from "../components/Maps";
+import Board from "../components/Board";
 import styled from 'styled-components';
 import { css } from 'styled-components';
+import Poetry from '../components/Poetry';
 
 const PageContainer = styled.div`
-height:1000px;
-overflow:scroll
+height:1200px;
 `;
+// overflow:scroll
 
 const Context = styled.div`
     display: flex;
-    position: fixed;
     align-items: center;
     justify-content: center;
     height: 200px;
@@ -21,13 +22,17 @@ const Context = styled.div`
     font-size: 20px;
     font-family: 'Helvetica Neue', cursive;
     flex-direction: column;
-`;
+    background-color: #fefbd8;
+    `;
+    // position: fixed;
+    // opacity: 0.5;
 const BoxContainer = styled.div`
-    margin: 400px 0 0 0;
+    margin: 100px 0 0 0;
     display: flex;
 `;
+// width: 100px;
 const Box = styled.div`
-    width: 100px;
+    width: 100%;
     height: 150px;
     border: 1px solid white;
     transition:  all 0.3s linear;
@@ -69,6 +74,9 @@ const Page = () => {
             <style>
             @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
 </style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+</style>
             <Headers></Headers>
             <Context>
                 <Date>
@@ -89,7 +97,9 @@ const Page = () => {
                 <Box><FirstImg src="/images/couple/thailand.jpg"/></Box>
             </BoxContainer>
             <script type="text/javascript" id="kakaoMapScript" src={'//dapi.kakao.com/v2/maps/sdk.js?appkey='+process.env.REACT_APP_KAKAO_API_KEY}></script>
+            <Poetry></Poetry>
             <Maps></Maps>
+            <Board></Board>
         </PageContainer>
     )
 }

@@ -6,9 +6,10 @@ import { css } from 'styled-components';
 import Poetry from '../components/Poetry';
 
 const PageContainer = styled.div`
-height:1200px;
+height:1500px;
+overflow-x:hidden;
+overflow-y:hidden;
 `;
-// overflow:scroll
 
 const Context = styled.div`
     display: flex;
@@ -27,6 +28,9 @@ const Context = styled.div`
     // position: fixed;
     // opacity: 0.5;
 const BoxContainer = styled.div`
+    @media ( max-width: 568px ) {
+        body { color: red; }
+    }
     margin: 100px 0 0 0;
     display: flex;
 `;
@@ -38,8 +42,20 @@ const Box = styled.div`
     transition:  all 0.3s linear;
     &:hover {
         transform: scale(2);
+        cursor:pointer;
     };
 `;
+
+const LastBox = styled.div`
+    width: 100%;
+    height: 150px;
+    border: 1px solid white;
+    transition:  all 0.3s linear;
+    &:hover {
+        transform: scale(2);
+    };
+`;
+
     // ${props => props.image && 
     //     css `
     //     background-image: url(`../images/img${props.image}.jpeg`);
@@ -94,7 +110,7 @@ const Page = () => {
                 <Box><FirstImg src="/images/couple/v.jpg"/></Box>
                 <Box><FirstImg src="/images/couple/ring.jpg"/></Box>
                 <Box><FirstImg src="/images/couple/night.jpg"/></Box>
-                <Box><FirstImg src="/images/couple/thailand.jpg"/></Box>
+                <LastBox><FirstImg src="/images/couple/thailand.jpg"/></LastBox>
             </BoxContainer>
             <script type="text/javascript" id="kakaoMapScript" src={'//dapi.kakao.com/v2/maps/sdk.js?appkey='+process.env.REACT_APP_KAKAO_API_KEY}></script>
             <Poetry></Poetry>

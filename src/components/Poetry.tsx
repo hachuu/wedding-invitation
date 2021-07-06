@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 const PoetryDiv = styled.div`
-  margin: 100px 0 0 0;
+  margin: 100px 0 100px 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -29,9 +29,14 @@ const Poetry = () => {
       <Column>
       사랑스럽다
       </Column>
-
       <Column>
       너도 그렇다.
+      </Column>
+      <br/>
+      <br/>
+      <br/>
+      <Column>
+      나태주 풀꽃1🥀
       </Column>
     </PoetryDiv>
   )

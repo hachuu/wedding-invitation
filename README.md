@@ -82,3 +82,6 @@ git rm -r --cached .
 git add .
 git commit -m "fixed untracked files"
 ```
+
+2021/07/13
+[React Redux firebase board](https://forest71.tistory.com/189)

@@ -4,11 +4,12 @@ import Board from "../components/Board";
 import styled from 'styled-components';
 import { css } from 'styled-components';
 import Poetry from '../components/Poetry';
+import BringDown from '../components/BringDown';
 
 const PageContainer = styled.div`
-height:1500px;
-overflow-x:hidden;
-overflow-y:hidden;
+    height:1500px;
+    overflow-x:hidden;
+    overflow-y:hidden;
 `;
 
 const Context = styled.div`
@@ -105,6 +106,7 @@ const Page = () => {
                     결혼합니다 
                 </Lettering>
             </Context>
+            <BringDown></BringDown>
             <BoxContainer>
                 <Box><FirstImg src="/images/couple/laos.jpg"/></Box>
                 <Box><FirstImg src="/images/couple/v.jpg"/></Box>

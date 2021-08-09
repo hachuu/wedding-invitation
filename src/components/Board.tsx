@@ -33,9 +33,6 @@ const ButtonDiv = styled.div`
   }
 `
 
-// find low index of arrays
-
-
 const Board = () => {
 
   return (

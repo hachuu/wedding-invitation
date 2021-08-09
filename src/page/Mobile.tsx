@@ -85,7 +85,7 @@ const Lettering = styled.div`
 
 
     
-const Page = () => {
+const Mobile = () => {
     return (
         <PageContainer>
             <style>
@@ -123,4 +123,4 @@ const Page = () => {
 }
 
 
-export default Page;
+export default Mobile;

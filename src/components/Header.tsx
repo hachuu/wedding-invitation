@@ -13,7 +13,7 @@ const Wrapper = styled.div`
     z-index: 5;
 
     /* 색상 */
-    background: #EDD0CC;
+    background: #EEC4C4;
     color: white;
     border-bottom: 1px solid #D8D5ED;
     box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.20);
@@ -29,7 +29,7 @@ const Wrapper = styled.div`
 const Header = () => {
     return (
     <Wrapper>
-        Wedding card
+        Wedding Invitation
     </Wrapper>
 )};
 

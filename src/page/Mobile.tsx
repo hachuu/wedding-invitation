@@ -106,7 +106,7 @@ const Mobile = () => {
                     결혼합니다 
                 </Lettering>
             </Context>
-            <BringDown></BringDown>
+            {/* <BringDown></BringDown> */}
             <BoxContainer>
                 <Box><FirstImg src="/images/couple/laos.jpg"/></Box>
                 <Box><FirstImg src="/images/couple/v.jpg"/></Box>

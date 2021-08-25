@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import styled from 'styled-components';
 
 const BoardDiv = styled.div`
@@ -35,14 +36,15 @@ const ButtonDiv = styled.div`
 
 const Board = () => {
 
+  const [name, setName] = useState('');
+  const [content, setContent] = useState('');
+
   return (
     <>
     <BoardDiv>
-    <NameInput placeholder='이름'></NameInput>
-    <InputStyle placeholder='내용'></InputStyle>
-    <ButtonDiv>Comment</ButtonDiv>
-
-
+      <NameInput placeholder='이름' value={name} onChange={(e) => setName(e.target.value)}></NameInput>
+      <InputStyle placeholder='내용' value={content} onChange={(e) => setContent(e.target.value)}></InputStyle>
+      <ButtonDiv>Comment</ButtonDiv>
     </BoardDiv>
     </>
   )

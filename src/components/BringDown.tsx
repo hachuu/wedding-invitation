@@ -13,7 +13,7 @@ const BringDownDiv = styled.div`
 
 const BringDown = () => {
   return (
-    <BringDownDiv></BringDownDiv>
+    <BringDownDiv>뉴후</BringDownDiv>
   )
 }
 

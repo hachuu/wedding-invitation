@@ -97,7 +97,7 @@ const Mobile = () => {
             <Headers></Headers>
             <Context>
                 <Date>
-                    05/28
+                    2022년 5월 28일 12시
                 </Date>
                 <Lettering>
                     정성원 그리고 송하영

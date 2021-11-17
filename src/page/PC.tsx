@@ -65,11 +65,11 @@ const PC = () => {
                   <img src="/logo192.png" alt="logo-light" width="85"/>
                </a>
                <NavUL>
-                  <NavLi><a>test</a></NavLi>
-                  <NavLi><a>test</a></NavLi>
-                  <NavLi><a>test</a></NavLi>
-                  <NavLi><a>test</a></NavLi>
-                  <NavLi><a>test</a></NavLi>
+                  <NavLi>PC 레이아웃 테스트</NavLi>
+                  <NavLi>PC 레이아웃 테스트</NavLi>
+                  <NavLi>PC 레이아웃 테스트</NavLi>
+                  <NavLi>PC 레이아웃 테스트</NavLi>
+                  <NavLi>PC 레이아웃 테스트</NavLi>
                </NavUL>
             </NavTableDiv>
          </NavDiv>

@@ -26,9 +26,10 @@ const InputStyle = styled.input`
 `;
 
 const ButtonDiv = styled.div`
-  font-size: 10px;
+  font-size: 12px;
   width: 20%;
   background-color: #907FA4;
+  padding: 5px;
   &:hover {
     cursor:pointer;
   }
@@ -44,7 +45,7 @@ const Board = () => {
     <BoardDiv>
       <NameInput placeholder='이름' value={name} onChange={(e) => setName(e.target.value)}></NameInput>
       <InputStyle placeholder='내용' value={content} onChange={(e) => setContent(e.target.value)}></InputStyle>
-      <ButtonDiv>Comment</ButtonDiv>
+      <ButtonDiv>댓글 달기</ButtonDiv>
     </BoardDiv>
     </>
   )

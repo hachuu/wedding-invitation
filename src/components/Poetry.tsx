@@ -18,25 +18,25 @@ const Poetry = () => {
   return (
     <PoetryDiv>
       <Column>
-        자세히 보아야
+        '우리'라는
       </Column>
       <Column>
-        예쁘다
+      이름으로
       </Column>
       <Column>
-      오래 보아야
+      아름다운
       </Column>
       <Column>
-      사랑스럽다
+      첫 '시작'을 하려 합니다.
       </Column>
       <Column>
-      너도 그렇다.
+      함께 축복해주세요.
       </Column>
       <br/>
       <br/>
       <br/>
       <Column>
-      나태주 풀꽃1🥀
+      신랑 신부 올림🥀
       </Column>
     </PoetryDiv>
   )

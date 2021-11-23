@@ -1,5 +1,9 @@
 
+import { useEffect } from 'react';
 import styled from 'styled-components';
+declare const window: any
+const { kakao } = window;
+
 const Maps = () => {
 
     const funCopy = () => {
@@ -21,6 +25,7 @@ const Maps = () => {
         width: 250px;
         height: 250px;
     `;
+    
     const MapText = styled.div`
         overflow: auto;
         flex-basis: auto;
@@ -70,6 +75,14 @@ const Maps = () => {
         }
     `
 
+    useEffect(() => {
+        const container = document.getElementById('map');
+		const options = {
+			center: new kakao.maps.LatLng(37.46621315156307, 127.0326723986652),
+          level: 5
+		};
+        const map = new kakao.maps.Map(container, options);
+    }, []);
 
     return (
         <>

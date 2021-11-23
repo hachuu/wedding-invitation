@@ -53,7 +53,6 @@ const PC = () => {
    // Place
    // Contact
    // Board
-   {/* <img src="assets/images/logo.svg" alt="logo-dark-svg" width="85"> */}
  return (
     <>
     <div>

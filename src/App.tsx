@@ -5,6 +5,7 @@ import PC from "./page/PC";
 import Mobile from "./page/Mobile";
 import React from "react";
 import firebaseInit from "./firebaseInit";
+import { firestore } from "./firebase";
 
 function App() {
   console.log(firebaseInit)

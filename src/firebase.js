@@ -1,16 +1,29 @@
-import firebase from "firebase/app";
+import firebase from "firebase/compat/app";
 import "firebase/firestore";
 
 const firebaseConfig = {
-    // firebase 설정과 관련된 개인 정보
-};
+    apiKey: '%apiKey%',
+    authDomain: '%authDomain%',
+    projectId: '%projectId%',
+    storageBucket: '%storageBucket%',
+    messagingSenderId: '%messagingSenderId%',
+    appId: '%appId%',
+    measurementId: '%measurementId%'
+  };
 
-// firebaseConfig 정보로 firebase 시작
 firebase.initializeApp(firebaseConfig);
 
-// firebase의 firestore 인스턴스를 변수에 저장
-const firestore = firebase.firestore();
+// Get a list of cities from your database
+// async function getComments(db) {
+//   const commentCol = collection(db, 'comment-board');
+//   const citySnapshot = await getDocs(commentCol);
+//   const cityList = citySnapshot.docs.map(doc => doc.data());
+//   return cityList;
+// }
 
-// 필요한 곳에서 사용할 수 있도록 내보내기
+const firestore = firebase.firestore();
+//firebase.initializeApp(firebaseConfig).firestore()
+
+
 export { firestore };
-//https://firebase.google.com/docs/firestore/query-data/get-data#get_multiple_documents_from_a_collection%5D
+

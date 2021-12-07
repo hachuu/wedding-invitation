@@ -3,15 +3,30 @@ import MediaQuery from "react-responsive";
 import { useMediaQuery } from "react-responsive";
 import PC from "./page/PC";
 import Mobile from "./page/Mobile";
-import React from "react";
+import React, { useEffect } from "react";
 import firebaseInit from "./firebaseInit";
+// import { firestore } from "./firebase";
+import { getFirestore } from "firebase/firestore"
+import { collection, getDocs, setDoc } from "firebase/firestore";
 
 function App() {
-  console.log(firebaseInit)
+
+  const db = getFirestore();
+  
+
+  console.log(collection(db, "comment-board"));
+  console.log(collection(db, "comment-board"));
+  console.log(firebaseInit);
+  // console.log(firestore);
 
   const isMobile = useMediaQuery({
     query : "(max-width:767px)"
   });
+
+  useEffect(() => {
+    const querySnapshot = getDocs(collection(db, "comment-board"));
+    console.log(querySnapshot);
+  }, []);
   
   return (
     <div className="App">

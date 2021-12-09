@@ -13,7 +13,8 @@ const firebaseConfig = {
   storageBucket: '%storageBucket%',
   messagingSenderId: '%messagingSenderId%',
   appId: '%appId%',
-  measurementId: '%measurementId%'
+  measurementId: '%measurementId%',
+  // databaseURL: '<your-database-url>',
 };
 
 // Initialize Firebase

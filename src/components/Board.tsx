@@ -58,13 +58,18 @@ const Board = () => {
   const db = getFirestore();
   const [name, setName] = useState('');
   const [content, setContent] = useState('');
-  const [list, setList] = useState([]);
+  const [list, setList] = useState<any[]>([]);
 
-  const fetchData = useCallback(() => {
-    // const unsub = onSnapshot(doc(db, "comments", "01097520005"), (doc) => {
-    //   console.log("Current data: ", doc.data());
-    // });
-  }, []);
+  // const fetchData = useCallback(() => {
+  //   const unsub = onSnapshot(doc(db, "comments", "01097520005"), (doc) => {
+  //     console.log("Current data: ", doc.data());
+  //     const data = doc.data();
+  //     const datalist = [];
+  //     datalist.push(data);
+  //     console.log(datalist)
+  //     setList(datalist);
+  //   });
+  // }, []);
 
 
   useEffect(() => {
@@ -74,15 +79,15 @@ const Board = () => {
       const datalist = [];
       datalist.push(data);
       console.log(datalist)
-      // setList(datalist);
+      setList(datalist);
     });
-  }, [fetchData])
+  }, [])
   
 
   return (
     <>
     <BoardListDiv>
-      {list.map((item, index) => <ListDiv key={index}></ListDiv>)}
+      {list.map((item, index) => <ListDiv key={index}>{item.name} {item.comment}</ListDiv>)}
     </BoardListDiv>
     <BoardDiv>
       <NameInput placeholder='이름' value={name} onChange={(e) => setName(e.target.value)}></NameInput>

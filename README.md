@@ -88,3 +88,6 @@ git commit -m "fixed untracked files"
 
 2021/11/17
 [kakao map 가이드](https://apis.map.kakao.com/web/guide/)
+
+2021/12/09
+[Defensive CSS](https://ishadeed.com/article/defensive-css/)

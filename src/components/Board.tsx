@@ -1,5 +1,19 @@
-import { useState } from 'react';
+import { doc, onSnapshot } from '@firebase/firestore';
+// import {firebaseInstance} from '../../firebase/firebase';
+import { getFirestore } from 'firebase/firestore';
+import { useCallback, useEffect, useState } from 'react';
 import styled from 'styled-components';
+
+
+
+const BoardListDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  margin: 100px 0;
+  width: 100%;
+`;
 
 const BoardDiv = styled.div`
   display: flex;
@@ -8,6 +22,10 @@ const BoardDiv = styled.div`
   justify-content: center;
   margin: 100px 0;
   width: 100%;
+`;
+const ListDiv = styled.div`
+  display: flex;
+  background-color: #f5f5f5;
 `;
 
 const writeDiv = styled.div`
@@ -37,11 +55,35 @@ const ButtonDiv = styled.div`
 
 const Board = () => {
 
+  const db = getFirestore();
   const [name, setName] = useState('');
   const [content, setContent] = useState('');
+  const [list, setList] = useState([]);
+
+  const fetchData = useCallback(() => {
+    // const unsub = onSnapshot(doc(db, "comments", "01097520005"), (doc) => {
+    //   console.log("Current data: ", doc.data());
+    // });
+  }, []);
+
+
+  useEffect(() => {
+    const unsub = onSnapshot(doc(db, "comments", "01097520005"), (doc) => {
+      console.log("Current data: ", doc.data());
+      const data = doc.data();
+      const datalist = [];
+      datalist.push(data);
+      console.log(datalist)
+      // setList(datalist);
+    });
+  }, [fetchData])
+  
 
   return (
     <>
+    <BoardListDiv>
+      {list.map((item, index) => <ListDiv key={index}></ListDiv>)}
+    </BoardListDiv>
     <BoardDiv>
       <NameInput placeholder='이름' value={name} onChange={(e) => setName(e.target.value)}></NameInput>
       <InputStyle placeholder='내용' value={content} onChange={(e) => setContent(e.target.value)}></InputStyle>

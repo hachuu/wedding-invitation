@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "wedding-invitation-2090a"
+    "default": "wedding-invitation-2090a",
+    "staging": "wedding-invitation-2090a"
   }
 }

@@ -13,14 +13,6 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-// Get a list of cities from your database
-// async function getComments(db) {
-//   const commentCol = collection(db, 'comment-board');
-//   const citySnapshot = await getDocs(commentCol);
-//   const cityList = citySnapshot.docs.map(doc => doc.data());
-//   return cityList;
-// }
-
 const firestore = firebase.firestore();
 //firebase.initializeApp(firebaseConfig).firestore()
 

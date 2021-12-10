@@ -8,6 +8,7 @@ import {firebaseInstance, dbService} from "./firebaseInit";
 // import { firestore } from "./firebase";
 import { getFirestore, doc, onSnapshot } from "firebase/firestore"
 import { collection, getDocs, setDoc,  } from "firebase/firestore";
+import * as firebase from "firebase/app";
 
 function App() {
   const isMobile = useMediaQuery({

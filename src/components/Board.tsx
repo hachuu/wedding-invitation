@@ -1,17 +1,18 @@
-import { doc, onSnapshot } from '@firebase/firestore';
+import { collection, doc, onSnapshot, } from '@firebase/firestore';
 // import {firebaseInstance} from '../../firebase/firebase';
 import { getFirestore } from 'firebase/firestore';
-import { useCallback, useEffect, useState } from 'react';
+import { SetStateAction, useCallback, useEffect, useState } from 'react';
 import styled from 'styled-components';
 
-
+import 'firebase/firestore';
+import { dbService } from 'firebaseInit';
 
 const BoardListDiv = styled.div`
   display: flex;
-  flex-direction: row;
-  text-align: center;
+  flex-direction: column;
+  // text-align: center;
   justify-content: center;
-  margin: 100px 0;
+  margin: 10px 0;
   width: 100%;
 `;
 
@@ -24,8 +25,10 @@ const BoardDiv = styled.div`
   width: 100%;
 `;
 const ListDiv = styled.div`
-  display: flex;
   background-color: #f5f5f5;
+  display: inline-block;
+  color: $gray-text;
+  vertical-align: middle;
 `;
 
 const writeDiv = styled.div`
@@ -60,29 +63,40 @@ const Board = () => {
   const [content, setContent] = useState('');
   const [list, setList] = useState<any[]>([]);
 
-  // const fetchData = useCallback(() => {
-  //   const unsub = onSnapshot(doc(db, "comments", "01097520005"), (doc) => {
-  //     console.log("Current data: ", doc.data());
-  //     const data = doc.data();
-  //     const datalist = [];
-  //     datalist.push(data);
-  //     console.log(datalist)
-  //     setList(datalist);
-  //   });
-  // }, []);
+  const getCommetList = useCallback(() => {
+    dbService.collection("comments").get().then((querySnapshot) => {
+      const datalist: SetStateAction<any[]> = [];
+      querySnapshot.forEach((doc) => {
+        datalist.push(doc.data());
+      });
+      setList(datalist);
+    })
+  }, []);
 
 
   useEffect(() => {
-    const unsub = onSnapshot(doc(db, "comments", "01097520005"), (doc) => {
-      console.log("Current data: ", doc.data());
-      const data = doc.data();
-      const datalist = [];
-      datalist.push(data);
-      console.log(datalist)
-      setList(datalist);
-    });
+    getCommetList();
+    // dbService.collection("comments").get().then((querySnapshot) => {
+    //   const datalist: SetStateAction<any[]> = [];
+    //   querySnapshot.forEach((doc) => {
+    //     console.log(`${doc.id} => ${doc.data()}`);
+    //     datalist.push(doc.data());
+    //   });
+    //   setList(datalist);
+    // })
   }, [])
-  
+
+  const addComment = async () => {
+    if (name !== '' && content !== '') {
+      dbService.collection("comments").add({
+        name: name,
+        comment: content,
+      })
+      setName('');
+      setContent('');
+      getCommetList();
+    }
+  }
 
   return (
     <>
@@ -92,7 +106,7 @@ const Board = () => {
     <BoardDiv>
       <NameInput placeholder='이름' value={name} onChange={(e) => setName(e.target.value)}></NameInput>
       <InputStyle placeholder='내용' value={content} onChange={(e) => setContent(e.target.value)}></InputStyle>
-      <ButtonDiv>댓글 달기</ButtonDiv>
+      <ButtonDiv onClick={(e) => addComment()}>댓글 달기</ButtonDiv>
     </BoardDiv>
     </>
   )

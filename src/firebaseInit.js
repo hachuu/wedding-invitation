@@ -1,7 +1,6 @@
-// import firebase from 'firebase';
 import { initializeApp } from "firebase/app";
-import firebase from "firebase/compat/app";
-import {getFirestore} from 'firebase/firestore';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/firestore';
 // import 'firebaseInstance/storage';
 // const firebaseConfig = {
 //   apiKey: '%apiKey%',
@@ -26,9 +25,5 @@ const firebaseConfig = {
   // databaseURL: '<your-database-url>',
 };
 
-// firebase.initializeApp(firebaseConfig);
-// export const firebaseInstance = firebase;
-export const firebaseInstance = initializeApp(firebaseConfig);
-// export const dbService = firebase.firestore();
-// export const dbService = firebase.firestore();
-export const dbService = getFirestore();
+export const firebaseInstance = firebase.initializeApp(firebaseConfig);
+export const dbService = firebase.firestore();

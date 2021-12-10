@@ -7,7 +7,7 @@ import Poetry from '../components/Poetry';
 import BringDown from '../components/BringDown';
 
 const PageContainer = styled.div`
-    height:1500px;
+    // height:1500px;
     overflow-x:hidden;
     overflow-y:hidden;
 `;

@@ -12,7 +12,7 @@ const BoardListDiv = styled.div`
   flex-direction: column;
   // text-align: center;
   justify-content: center;
-  margin: 10px 0;
+  margin: 50px 0;
   width: 100%;
 `;
 

@@ -16,8 +16,6 @@ function App() {
   });
 
   const db = getFirestore();
-  // console.log(db);
-  console.log(dbService);
 
   // const fetchData = useCallback(async () => {
   //   console.log("fetchData");

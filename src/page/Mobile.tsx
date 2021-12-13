@@ -18,7 +18,7 @@ const Context = styled.div`
     justify-content: center;
     height: 200px;
     width: 100%;
-    margin: 100px 0;
+    margin: 100px 0 0 0;
     top: 0px;
     z-index: 5;
     font-size: 20px;
@@ -32,9 +32,17 @@ const BoxContainer = styled.div`
     @media ( max-width: 568px ) {
         body { color: red; }
     }
-    margin: 100px 0 0 0;
+    margin: 10px 0 0 0;
     display: flex;
 `;
+
+const ImageContainer = styled.div`
+    @media ( max-width: 568px ) {
+        body { color: red; }
+    }
+    margin: 10px 0 0 0;
+`;
+
 // width: 100px;
 const Box = styled.div`
     width: 100%;
@@ -57,16 +65,11 @@ const LastBox = styled.div`
     };
 `;
 
-    // ${props => props.image && 
-    //     css `
-    //     background-image: url(`../images/img${props.image}.jpeg`);
-    //     `
-    // };
-    // background: rgba(174, 183, 230, 0.7);
 const FirstImg = styled.img`
     width: 100%;
     // height:100%;
-    object-fit: cover
+    object-fit: cover;
+    margin: 10px 0 0 0;
 `;
 
 const Lettering = styled.div`
@@ -107,13 +110,18 @@ const Mobile = () => {
                     결혼합니다 
                 </Lettering>
             </Context>
-            <BoxContainer>
-                <Box><FirstImg src="/images/couple/one.jpeg"/></Box>
+            <ImageContainer>
+                {/* <Box><FirstImg src="/images/couple/one.jpeg"/></Box>
                 <Box><FirstImg src="/images/couple/blue-shy.jpeg"/></Box>
                 <Box><FirstImg src="/images/couple/couple-shoes.jpeg"/></Box>
                 <Box><FirstImg src="/images/couple/next-line.jpeg"/></Box>
-                <LastBox><FirstImg src="/images/couple/yellow-shoes.jpeg"/></LastBox>
-            </BoxContainer>
+                <LastBox><FirstImg src="/images/couple/yellow-shoes.jpeg"/></LastBox> */}
+                <FirstImg src="/images/couple/blue-shy.jpeg"/>
+                <FirstImg src="/images/couple/next-line.jpeg"/>
+                <FirstImg src="/images/couple/one.jpeg"/>
+                <FirstImg src="/images/couple/couple-shoes.jpeg"/>
+                <FirstImg src="/images/couple/yellow-shoes.jpeg"/>
+            </ImageContainer>
             <script type="text/javascript" id="kakaoMapScript" src={'//dapi.kakao.com/v2/maps/sdk.js?appkey='+process.env.REACT_APP_KAKAO_API_KEY}></script>
             <Poetry></Poetry>
             <Maps></Maps>
@@ -121,6 +129,5 @@ const Mobile = () => {
         </PageContainer>
     )
 }
-
 
 export default Mobile;

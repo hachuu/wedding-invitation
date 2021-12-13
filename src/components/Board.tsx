@@ -23,11 +23,11 @@ const BoardDiv = styled.div`
   flex-direction: row;
   text-align: center;
   justify-content: center;
-  margin: 100px 0;
+  margin: 50px 0;
   width: 100%;
 `;
 const ListDiv = styled.div`
-  background-color: #f5f5f5;
+  background-color: #907fa44a;
   display: inline-block;
   color: $gray-text;
   vertical-align: middle;

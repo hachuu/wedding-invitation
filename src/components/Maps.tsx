@@ -68,7 +68,7 @@ const Maps = () => {
 
     const MapCoverDiv = styled.div`
         width: 100%; 
-        height: 30px;
+        height: 20px;
         background-color: #94d0cc;
         // margin: 10px 0;
     `;
@@ -98,7 +98,6 @@ const Maps = () => {
                 <Date>2022년 5월 28일 12시</Date><br/>
                 <Address>
                     <Date>더 케이 호텔</Date><br/>
-                    <br/>
                     <br/>
                     <AddressP id="address">서울특별시 서초구 바우뫼로 12길 70</AddressP>
                     <AddressP>(구 주소:서울특별시 서초구 양재동 202번지)</AddressP>

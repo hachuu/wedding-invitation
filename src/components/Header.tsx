@@ -28,7 +28,7 @@ const Wrapper = styled.div`
 
 const Header = () => {
     return (
-    <Wrapper>정성원❤송하영 결혼초대장
+    <Wrapper>정성원❤송하영
     </Wrapper>
 )};
 

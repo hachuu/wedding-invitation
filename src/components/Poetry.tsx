@@ -5,7 +5,8 @@ const PoetryDiv = styled.div`
   justify-content: center;
   flex-direction: column;
   flex-flow: wrap;
-  font-family: 'Gamja Flower', cursive;
+  font-family: 'Cafe24SsurroundAir', cursive;
+  font-size: 20px;
 `;
 
 const Column = styled.div`

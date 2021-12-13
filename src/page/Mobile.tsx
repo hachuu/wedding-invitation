@@ -79,11 +79,17 @@ const Lettering = styled.div`
     font-size:30px;
 `;
 
-    const Date = styled.div`
+const Date = styled.div`
     font-family: 'KOTRAHOPE', cursive;
     font-weight: normal;
     font-style: normal;
     font-size:23px;
+`;
+
+const CopyRightDiv = styled.div`
+    font-family: 'KOTRAHOPE', cursive;
+    font-size:14px;
+    text-align: center;
 `;
     // src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
 
@@ -126,6 +132,7 @@ const Mobile = () => {
             <Poetry></Poetry>
             <Maps></Maps>
             <Board></Board>
+            <CopyRightDiv>Copyright. 2021 <a href="https://github.com/hachuu/wedding-invitation" target="_blank">송하영</a></CopyRightDiv>
         </PageContainer>
     )
 }

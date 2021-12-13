@@ -42,12 +42,14 @@ const NameInput = styled.input`
 border-top: 5px solid #907FA4;
  width: 15%;
  font-family: 'Cafe24SsurroundAir', cursive;
+ border-radius: 5px;
 `;
 
 const InputStyle = styled.input`
   border-top: 5px solid #907FA4;
   width: 40%;
   font-family: 'Cafe24SsurroundAir', cursive;
+  border-radius: 5px;
 `;
 
 const ButtonDiv = styled.div`
@@ -59,6 +61,7 @@ font-family: 'Cafe24SsurroundAir', cursive;
   &:hover {
     cursor:pointer;
   }
+  border-radius: 5px;
 `
 
 const NameSpan = styled.span`

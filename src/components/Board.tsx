@@ -78,13 +78,14 @@ const Board = () => {
   const [list, setList] = useState<any[]>([]);
 
   const getCommetList = useCallback(() => {
-    dbService.collection("comments").get().then((querySnapshot) => {
+    dbService.collection("comments").orderBy('dateTime', 'desc').get().then((querySnapshot) => {
       const datalist: SetStateAction<any[]> = [];
       querySnapshot.forEach((doc) => {
         datalist.push(doc.data());
       });
       setList(datalist);
     })
+    console.log(list);
   }, []);
 
 
@@ -105,6 +106,7 @@ const Board = () => {
       dbService.collection("comments").add({
         name: name,
         comment: content,
+        dateTime: new Date()
       })
       setName('');
       setContent('');

@@ -65,22 +65,22 @@ const LastBox = styled.div`
     // background: rgba(174, 183, 230, 0.7);
 const FirstImg = styled.img`
     width: 100%;
-    height:100%;
+    // height:100%;
     object-fit: cover
 `;
 
 const Lettering = styled.div`
-    font-family: 'Nanum Pen Script', cursive;
+    font-family: 'KOTRAHOPE', cursive;
     font-weight: normal;
     font-style: normal;
     font-size:30px;
 `;
 
     const Date = styled.div`
-    font-family: 'Nanum Pen Script', cursive;
+    font-family: 'KOTRAHOPE', cursive;
     font-weight: normal;
     font-style: normal;
-    font-size:20px;
+    font-size:23px;
 `;
     // src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
 
@@ -107,7 +107,6 @@ const Mobile = () => {
                     결혼합니다 
                 </Lettering>
             </Context>
-            {/* <BringDown></BringDown> */}
             <BoxContainer>
                 <Box><FirstImg src="/images/couple/one.jpeg"/></Box>
                 <Box><FirstImg src="/images/couple/blue-shy.jpeg"/></Box>

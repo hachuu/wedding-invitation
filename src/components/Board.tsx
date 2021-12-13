@@ -14,6 +14,8 @@ const BoardListDiv = styled.div`
   justify-content: center;
   margin: 50px 0;
   width: 100%;
+  font-size: 15px;
+  font-family: 'KyoboHandwriting2020A', cursive;
 `;
 
 const BoardDiv = styled.div`
@@ -39,14 +41,17 @@ const writeDiv = styled.div`
 const NameInput = styled.input`
 border-top: 5px solid #907FA4;
  width: 15%;
+ font-family: 'Cafe24SsurroundAir', cursive;
 `;
 
 const InputStyle = styled.input`
   border-top: 5px solid #907FA4;
-  width: 40%
+  width: 40%;
+  font-family: 'Cafe24SsurroundAir', cursive;
 `;
 
 const ButtonDiv = styled.div`
+font-family: 'Cafe24SsurroundAir', cursive;
   font-size: 12px;
   width: 20%;
   background-color: #907FA4;
@@ -54,6 +59,12 @@ const ButtonDiv = styled.div`
   &:hover {
     cursor:pointer;
   }
+`
+
+const NameSpan = styled.span`
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'KyoboHandwriting2020A', cursive;
 `
 
 const Board = () => {
@@ -101,7 +112,7 @@ const Board = () => {
   return (
     <>
     <BoardListDiv>
-      {list.map((item, index) => <ListDiv key={index}>{item.name} {item.comment}</ListDiv>)}
+      {list.map((item, index) => <ListDiv key={index}><NameSpan>{item.name}</NameSpan> {item.comment}</ListDiv>)}
     </BoardListDiv>
     <BoardDiv>
       <NameInput placeholder='이름' value={name} onChange={(e) => setName(e.target.value)}></NameInput>

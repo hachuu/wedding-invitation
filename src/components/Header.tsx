@@ -21,15 +21,14 @@ const Wrapper = styled.div`
     /* 폰트 */
     font-size: 2.5rem;
     text-align: center;
-    font-size: 50px;  //폰트 사이즈 키웠습니다.
+    font-size: 45px;  //폰트 사이즈 키웠습니다.
     font-family: header-font;
 `;
 
 
 const Header = () => {
     return (
-    <Wrapper>
-        Wedding Invitation
+    <Wrapper>정성원❤송하영 결혼초대장
     </Wrapper>
 )};
 

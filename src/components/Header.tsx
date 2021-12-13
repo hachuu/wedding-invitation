@@ -24,12 +24,19 @@ const Wrapper = styled.div`
     font-size: 45px;  //폰트 사이즈 키웠습니다.
     font-family: header-font;
 `;
-
+// const Location = styled.div`
+//     font-size: 13px;
+// `
 
 const Header = () => {
     return (
-    <Wrapper>정성원❤송하영
-    </Wrapper>
+        <>
+        <Wrapper>
+            정성원❤송하영
+        </Wrapper>
+        {/* <Location>The-K호텔서울</Location> */}
+
+        </>
 )};
 
 export default Header;

@@ -90,6 +90,7 @@ const CopyRightDiv = styled.div`
     font-family: 'KOTRAHOPE', cursive;
     font-size:14px;
     text-align: center;
+    font-color: #fefbd8;
 `;
     // src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
 
@@ -100,10 +101,10 @@ const Mobile = () => {
         <PageContainer>
             <style>
             @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
-</style>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
-</style>
+            </style>
+            <style>
+            @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+            </style>
             <Headers></Headers>
             <Context>
                 <Date>

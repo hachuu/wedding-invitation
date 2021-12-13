@@ -46,7 +46,7 @@ const Maps = () => {
         // background-color: #94d0cc;
         background-color: rgba( 148, 208, 204, 0.5 );
 
-    `
+    `;
 
     const Address = styled.div`
         
@@ -74,10 +74,17 @@ const Maps = () => {
     `;
 
     const CopyButtonDiv = styled.div`
-        svg {
-            cursor: pointer;
-        }
-    `
+        font-size:12px;
+        font-family: 'Cafe24SsurroundAir', cursive;
+        cursor: pointer;
+    `;
+
+    const LinkMapDiv = styled.div`
+        font-size:10px;
+        font-family: 'Cafe24SsurroundAir', cursive;
+        cursor: pointer;
+        margin-top: 5px;
+    `;
 
     useEffect(() => {
         const container = document.getElementById('map');
@@ -86,6 +93,16 @@ const Maps = () => {
           level: 5
 		};
         const map = new kakao.maps.Map(container, options);
+                // 마커가 표시될 위치입니다 
+        const markerPosition  = new kakao.maps.LatLng(37.46621315156307, 127.0326723986652); 
+
+        // 마커를 생성합니다
+        const marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker.setMap(map);
     }, []);
 
     return (
@@ -103,8 +120,10 @@ const Maps = () => {
                     <AddressP>(구 주소:서울특별시 서초구 양재동 202번지)</AddressP>
                 </Address>
                 <CopyButtonDiv onClick={()=>funCopy()} >
-                    <svg aria-hidden="true" focusable="false" style={{height: '15px', width: '15px', marginTop: '10px'}} data-prefix="far" data-icon="copy" className="svg-inline--fa fa-copy fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"></path></svg>
+                    복사하기<svg aria-hidden="true" focusable="false" style={{height: '15px', width: '15px', marginTop: '10px'}} data-prefix="far" data-icon="copy" className="svg-inline--fa fa-copy fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"></path></svg>
                 </CopyButtonDiv>
+                <LinkMapDiv onClick={()=> window.open('https://map.kakao.com/link/map/37.46621315156307,127.0326723986652')}>지도앱으로 보기
+                </LinkMapDiv>
             </MapText>
         </MapContainer>
         <MapCoverDiv>

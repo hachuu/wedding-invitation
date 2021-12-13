@@ -5,6 +5,8 @@ const NavLi = styled.li`
    position: relative;
    display: inline-block;
    vertical-align: middle;
+   font-size: 30px;
+   font-family: 'Cafe24SsurroundAir', cursive;
 `;
 
 
@@ -60,15 +62,11 @@ const PC = () => {
          <NavDiv>
             <ContainerDiv></ContainerDiv>
             <NavTableDiv>
-               <a href="index.html">
+               {/* <a href="index.html">
                   <img src="/logo192.png" alt="logo-light" width="85"/>
-               </a>
+               </a> */}
                <NavUL>
-                  <NavLi>PC 레이아웃 테스트</NavLi>
-                  <NavLi>PC 레이아웃 테스트</NavLi>
-                  <NavLi>PC 레이아웃 테스트</NavLi>
-                  <NavLi>PC 레이아웃 테스트</NavLi>
-                  <NavLi>PC 레이아웃 테스트</NavLi>
+                  <NavLi>모바일로 봐주세요💟</NavLi>
                </NavUL>
             </NavTableDiv>
          </NavDiv>

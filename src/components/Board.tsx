@@ -40,14 +40,14 @@ const writeDiv = styled.div`
 
 const NameInput = styled.input`
 border-top: 5px solid #907FA4;
- width: 15%;
+ width: 20%;
  font-family: 'Cafe24SsurroundAir', cursive;
  border-radius: 5px;
 `;
 
 const InputStyle = styled.input`
   border-top: 5px solid #907FA4;
-  width: 40%;
+  width: 50%;
   font-family: 'Cafe24SsurroundAir', cursive;
   border-radius: 5px;
 `;
@@ -55,7 +55,7 @@ const InputStyle = styled.input`
 const ButtonDiv = styled.div`
 font-family: 'Cafe24SsurroundAir', cursive;
   font-size: 12px;
-  width: 20%;
+  width: 15%;
   background-color: #907FA4;
   padding: 5px;
   &:hover {
@@ -109,6 +109,8 @@ const Board = () => {
       setName('');
       setContent('');
       getCommetList();
+    } else {
+      alert('신랑 신부에게 축하메세지를 남겨주세요💌');
     }
   }
 

@@ -85,7 +85,6 @@ const Board = () => {
       });
       setList(datalist);
     })
-    console.log(list);
   }, []);
 
 

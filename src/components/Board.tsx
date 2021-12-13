@@ -12,7 +12,7 @@ const BoardListDiv = styled.div`
   flex-direction: column;
   // text-align: center;
   justify-content: center;
-  margin: 50px 0;
+  margin: 40px 0 20px 0 ;
   width: 100%;
   font-size: 15px;
   font-family: 'KyoboHandwriting2020A', cursive;
@@ -23,7 +23,7 @@ const BoardDiv = styled.div`
   flex-direction: row;
   text-align: center;
   justify-content: center;
-  margin: 50px 0;
+  margin: 30px 0;
   width: 100%;
 `;
 const ListDiv = styled.div`

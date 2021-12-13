@@ -90,7 +90,11 @@ const CopyRightDiv = styled.div`
     font-family: 'KOTRAHOPE', cursive;
     font-size:14px;
     text-align: center;
-    font-color: #fefbd8;
+    a {
+        text-decoration: none;
+        color: #907FA4;
+    }
+    margin: 0 0 15px 0;
 `;
     // src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
 

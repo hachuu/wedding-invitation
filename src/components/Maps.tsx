@@ -23,7 +23,7 @@ const Maps = () => {
         flex-basis: auto;
         margin-left: auto;
         width: 250px;
-        height: 250px;
+        // height: 250px;
     `;
     
     const MapText = styled.div`
@@ -32,7 +32,7 @@ const Maps = () => {
         margin-left: auto;
         // padding: 10px 0px 0px 0px;
         width: 250px;
-        height: 250px;
+        // height: 250px;
     `;
     // position: fixed;
     const MapContainer = styled.div`

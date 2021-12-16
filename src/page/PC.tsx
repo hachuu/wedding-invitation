@@ -16,7 +16,7 @@ const PageDiv = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px 500px 10px 500px;
+  padding: 10px 25% 10px 25%;
 `;
 
 const FirstImg = styled.img`

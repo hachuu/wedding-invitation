@@ -16,7 +16,7 @@ const PageDiv = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fafafa;
+  padding: 10px 500px 10px 500px;
 `;
 
 const FirstImg = styled.img`

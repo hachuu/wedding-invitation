@@ -10,27 +10,28 @@ import { dbService } from 'firebaseInit';
 const BoardListDiv = styled.div`
   display: flex;
   flex-direction: column;
-  // text-align: center;
-  justify-content: center;
   margin: 40px 0 20px 0 ;
   width: 100%;
   font-size: 15px;
-  font-family: 'KyoboHandwriting2020A', cursive;
 `;
 
 const BoardDiv = styled.div`
   display: flex;
   flex-direction: row;
-  text-align: center;
   justify-content: center;
   margin: 30px 0;
   width: 100%;
 `;
 const ListDiv = styled.div`
-  background-color: #907fa44a;
+  text-align: left;
+  margin: 0 10px 0 10px;
+  padding: 2px;
+  background-color: #907fa457;
   display: inline-block;
   color: $gray-text;
   vertical-align: middle;
+  border: 0.5px solid white;
+  border-radius: 5px;
 `;
 
 const writeDiv = styled.div`
@@ -67,8 +68,15 @@ font-family: 'Cafe24SsurroundAir', cursive;
 const NameSpan = styled.span`
   font-weight: bold;
   font-size: 18px;
-  font-family: 'KyoboHandwriting2020A', cursive;
+  font-family: 'KOTRAHOPE', cursive;
 `
+
+const CommentSpan = styled.span`
+  padding: 0 10px;
+  font-family: 'KyoboHand', cursive;
+  font-size: 18px;
+  display: inline-block;
+`;
 
 const Board = () => {
 
@@ -118,7 +126,12 @@ const Board = () => {
   return (
     <>
     <BoardListDiv>
-      {list.map((item, index) => <ListDiv key={index}><NameSpan>{item.name}</NameSpan> {item.comment}</ListDiv>)}
+      {list.map((item, index) => 
+      <ListDiv key={index}>
+        <NameSpan>{item.name}</NameSpan>
+         <CommentSpan>{item.comment}</CommentSpan>
+         </ListDiv>
+      )}
     </BoardListDiv>
     <BoardDiv>
       <NameInput placeholder='이름' value={name} onChange={(e) => setName(e.target.value)}></NameInput>

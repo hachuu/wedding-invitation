@@ -27,8 +27,8 @@ code {
 }
 
 @font-face {
-  font-family: 'KyoboHandwriting2020A';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/KyoboHandwriting2020A.woff') format('woff');
+  font-family: 'KyoboHand';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

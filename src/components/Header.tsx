@@ -15,7 +15,6 @@ const Wrapper = styled.div`
     /* 색상 */
     background: #EEC4C4;
     color: white;
-    border-bottom: 1px solid #D8D5ED;
     box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.20);
 
     /* 폰트 */
@@ -23,6 +22,8 @@ const Wrapper = styled.div`
     text-align: center;
     font-size: 45px;  //폰트 사이즈 키웠습니다.
     font-family: header-font;
+    border-top: 10px dotted white;
+    border-bottom: 10px dotted white;
 `;
 // const Location = styled.div`
 //     font-size: 13px;

@@ -26,7 +26,7 @@ const ListDiv = styled.div`
   text-align: left;
   margin: 0 10px 0 10px;
   padding: 2px;
-  background-color: #907fa457;
+  background-color: #EAE3C8;
   display: inline-block;
   color: $gray-text;
   vertical-align: middle;
@@ -40,14 +40,14 @@ const writeDiv = styled.div`
 `;
 
 const NameInput = styled.input`
-border-top: 5px solid #907FA4;
+border-top: 5px solid #CFC5A5;
  width: 20%;
  font-family: 'Cafe24SsurroundAir', cursive;
  border-radius: 5px;
 `;
 
 const InputStyle = styled.input`
-  border-top: 5px solid #907FA4;
+  border-top: 5px solid #CFC5A5;
   width: 50%;
   font-family: 'Cafe24SsurroundAir', cursive;
   border-radius: 5px;
@@ -57,7 +57,7 @@ const ButtonDiv = styled.div`
 font-family: 'Cafe24SsurroundAir', cursive;
   font-size: 12px;
   width: 15%;
-  background-color: #907FA4;
+  background-color: #CFC5A5;
   padding: 5px;
   &:hover {
     cursor:pointer;

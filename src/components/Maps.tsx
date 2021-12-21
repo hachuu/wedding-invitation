@@ -22,17 +22,17 @@ const Maps = () => {
         overflow: auto;
         flex-basis: auto;
         margin-left: auto;
-        width: 250px;
-        // height: 250px;
+        width: 60%;
+        // height: 400px;
     `;
     
     const MapText = styled.div`
         overflow: auto;
         flex-basis: auto;
         margin-left: auto;
-        // padding: 10px 0px 0px 0px;
-        width: 250px;
-        // height: 250px;
+        margin: 50px 0px 0px 0px;
+        width: 40%;
+        height: 400px;
     `;
     // position: fixed;
     const MapContainer = styled.div`
@@ -40,12 +40,9 @@ const Maps = () => {
         flex-direction: row;
         text-align: center;
         justify-content: center;
-        // margin: 5px 0;
+        margin: 5px 0;
         width: 100%;
-        // height: 260px;
-        // background-color: #94d0cc;
-        background-color: rgba( 148, 208, 204, 0.5 );
-
+        background-color: #C2B092;
     `;
 
     const Address = styled.div`
@@ -59,7 +56,7 @@ const Maps = () => {
         font-size:12px;
     `;
 
-    const Date = styled.div`
+    const Title = styled.div`
         font-family: 'KOTRAHOPE', cursive;
         font-weight: normal;
         font-style: normal;
@@ -67,16 +64,19 @@ const Maps = () => {
     `;
 
     const MapCoverDiv = styled.div`
-        width: 100%; 
-        height: 20px;
-        background-color: #94d0cc;
-        // margin: 10px 0;
+        // width: 100%; 
+        height: 10px;
+
+        background-color: #CFC5A5;
+        margin: 10px 10px 10px 10px;
+        border-radius: 5px;
     `;
 
     const CopyButtonDiv = styled.div`
         font-size:12px;
         font-family: 'Cafe24SsurroundAir', cursive;
         cursor: pointer;
+        margin: 10px 10px 10px 10px;
     `;
 
     const LinkMapDiv = styled.div`
@@ -90,7 +90,7 @@ const Maps = () => {
         const container = document.getElementById('map');
 		const options = {
 			center: new kakao.maps.LatLng(37.46621315156307, 127.0326723986652),
-          level: 5
+            level: 5
 		};
         const map = new kakao.maps.Map(container, options);
                 // 마커가 표시될 위치입니다 
@@ -112,9 +112,10 @@ const Maps = () => {
         <MapContainer>
             <Map id="map"></Map>
             <MapText>
-                <Date>2022년 5월 28일 12시</Date><br/>
+                <Title>오시는 길</Title><br/>
+                <Title>2022년 5월 28일 12시</Title><br/>
                 <Address>
-                    <Date>더 케이 호텔</Date><br/>
+                    <Title>더 케이 호텔</Title><br/>
                     <br/>
                     <AddressP id="address">서울특별시 서초구 바우뫼로 12길 70</AddressP>
                     <AddressP>(구 주소:서울특별시 서초구 양재동 202번지)</AddressP>

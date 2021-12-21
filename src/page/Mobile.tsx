@@ -17,14 +17,14 @@ const Context = styled.div`
     align-items: center;
     justify-content: center;
     height: 200px;
-    width: 100%;
-    margin: 100px 0 0 0;
+    margin: 130px 10px 0 10px;
+    border-radius: 5px;
     top: 0px;
     z-index: 5;
     font-size: 20px;
     font-family: 'Helvetica Neue', cursive;
     flex-direction: column;
-    background-color: #fefbd8;
+    background-color: #F0ECE3;
     `;
     // position: fixed;
     // opacity: 0.5;
@@ -41,6 +41,7 @@ const ImageContainer = styled.div`
         body { color: red; }
     }
     margin: 10px 0 0 0;
+    padding 0 10px 0 10px;
 `;
 
 // width: 100px;
@@ -66,6 +67,7 @@ const LastBox = styled.div`
 `;
 
 const FirstImg = styled.img`
+    border-radius: 5px;
     width: 100%;
     // height:100%;
     object-fit: cover;

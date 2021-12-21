@@ -12,6 +12,7 @@ const PoetryDiv = styled.div`
 const Column = styled.div`
 width: 350px;
 height : 20px;
+margin: 5px;
 `;
 
 const Poetry = () => {
@@ -19,25 +20,28 @@ const Poetry = () => {
   return (
     <PoetryDiv>
       <Column>
-        '우리'라는
+        서로의 이름을 부르는 것만으로도
       </Column>
       <Column>
-      이름으로
+        사랑의 깊이를 확인할 수 있는 두 사람이
       </Column>
       <Column>
-      아름다운
+        꽃과 나무처럼 걸어와서
       </Column>
       <Column>
-      첫 '시작'을 하려 합니다.
+        서로의 모든 것이 되기 위해
       </Column>
       <Column>
-      함께 축복해주세요.
+        오랜 기다림 끝에 혼례식을 치르는 날
+      </Column>
+      <Column>
+        세상은 더욱 아름다워라
       </Column>
       <br/>
       <br/>
       <br/>
       <Column>
-      신랑 신부 올림🥀
+      이해인 '사랑의 사람들이여'🥀
       </Column>
     </PoetryDiv>
   )

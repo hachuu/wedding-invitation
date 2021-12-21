@@ -13,17 +13,16 @@ const Wrapper = styled.div`
     z-index: 5;
 
     /* 색상 */
-    background: #EEC4C4;
+    background: #A1CAE2;
     color: white;
     box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.20);
 
     /* 폰트 */
-    font-size: 2.5rem;
     text-align: center;
-    font-size: 45px;  //폰트 사이즈 키웠습니다.
+    font-size: 30px;  //폰트 사이즈 키웠습니다.
     font-family: header-font;
-    border-top: 10px dotted white;
-    border-bottom: 10px dotted white;
+    border-top: 10px double white;
+    border-bottom: 10px double white;
 `;
 // const Location = styled.div`
 //     font-size: 13px;
@@ -33,7 +32,7 @@ const Header = () => {
     return (
         <>
         <Wrapper>
-            정성원❤송하영
+            Wedding Invitation
         </Wrapper>
         {/* <Location>The-K호텔서울</Location> */}
 

@@ -42,7 +42,7 @@ const Maps = () => {
         justify-content: center;
         margin: 5px 0;
         width: 100%;
-        background-color: #C2B092;
+        background-color: #FDFAF6;
     `;
 
     const Address = styled.div`
@@ -67,7 +67,7 @@ const Maps = () => {
         // width: 100%; 
         height: 10px;
 
-        background-color: #CFC5A5;
+        background-color: #FDFAF6;
         margin: 10px 10px 10px 10px;
         border-radius: 5px;
     `;
@@ -77,13 +77,19 @@ const Maps = () => {
         font-family: 'Cafe24SsurroundAir', cursive;
         cursor: pointer;
         margin: 10px 10px 10px 10px;
+        &:hover {
+            box-shadow: 0 6px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.10);
+        }
     `;
 
     const LinkMapDiv = styled.div`
-        font-size:10px;
+        font-size:12px;
         font-family: 'Cafe24SsurroundAir', cursive;
         cursor: pointer;
-        margin-top: 5px;
+        margin: 30px 10px 10px 10px;
+        &:hover {
+            box-shadow: 0 6px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.10);
+        }
     `;
 
     useEffect(() => {
@@ -123,7 +129,7 @@ const Maps = () => {
                 <CopyButtonDiv onClick={()=>funCopy()} >
                     복사하기<svg aria-hidden="true" focusable="false" style={{height: '15px', width: '15px', marginTop: '10px'}} data-prefix="far" data-icon="copy" className="svg-inline--fa fa-copy fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"></path></svg>
                 </CopyButtonDiv>
-                <LinkMapDiv onClick={()=> window.open('https://map.kakao.com/link/map/37.46621315156307,127.0326723986652')}>지도앱으로 보기
+                <LinkMapDiv onClick={()=> window.open('https://map.kakao.com/link/map/더 케이 호텔,37.466213,127.032672')}>지도앱으로 보기
                 </LinkMapDiv>
             </MapText>
         </MapContainer>

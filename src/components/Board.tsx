@@ -26,11 +26,11 @@ const ListDiv = styled.div`
   text-align: left;
   margin: 0 10px 0 10px;
   padding: 2px;
-  background-color: #EAE3C8;
+  background-color: #FDFAF6;
   display: inline-block;
   color: $gray-text;
   vertical-align: middle;
-  border: 0.5px solid white;
+  border: 0.5px solid #FAF1E6;
   border-radius: 5px;
 `;
 
@@ -40,14 +40,14 @@ const writeDiv = styled.div`
 `;
 
 const NameInput = styled.input`
-border-top: 5px solid #CFC5A5;
+border-top: 5px solid #FDFAF6;
  width: 20%;
  font-family: 'Cafe24SsurroundAir', cursive;
  border-radius: 5px;
 `;
 
 const InputStyle = styled.input`
-  border-top: 5px solid #CFC5A5;
+  border-top: 5px solid #FDFAF6;
   width: 50%;
   font-family: 'Cafe24SsurroundAir', cursive;
   border-radius: 5px;
@@ -57,10 +57,11 @@ const ButtonDiv = styled.div`
 font-family: 'Cafe24SsurroundAir', cursive;
   font-size: 12px;
   width: 15%;
-  background-color: #CFC5A5;
+  background-color: #FDFAF6;
   padding: 5px;
   &:hover {
     cursor:pointer;
+    box-shadow: 0 6px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.10);
   }
   border-radius: 5px;
 `

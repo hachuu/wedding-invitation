@@ -24,7 +24,7 @@ const Context = styled.div`
     font-size: 20px;
     font-family: 'Helvetica Neue', cursive;
     flex-direction: column;
-    background-color: #F0ECE3;
+    background-color: #FDFAF6;
     `;
     // position: fixed;
     // opacity: 0.5;

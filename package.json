@@ -10,7 +10,7 @@
     "@types/styled-components": "^5.1.9",
     "env-cmd": "^10.1.0",
     "firebase": "^9.5.0",
-    "node-sass": "^6.0.1",
+    "node-sass": "^5.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-responsive": "^8.2.0",

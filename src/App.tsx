@@ -1,10 +1,11 @@
-import "./App.css";
+import "./App.scss";
 import MediaQuery from "react-responsive";
 import { useMediaQuery } from "react-responsive";
 import PC from "./page/PC";
 import Mobile from "./page/Mobile";
 import React from "react";
 import firebaseInit from "./firebaseInit";
+import Main from "./page/Main";
 
 function App() {
   console.log(firebaseInit)
@@ -15,11 +16,9 @@ function App() {
   
   return (
     <div className="App">
-      {/* <MediaQuery maxWidth={767}>
-        <p>Mobile이시다</p>
-      </MediaQuery> */}
-      { isMobile ? <Mobile></Mobile>
-      : <PC></PC>}
+      <Main></Main>
+      {/* { isMobile ? <Mobile></Mobile>
+      : <PC></PC>} */}
     </div>
   );
 }

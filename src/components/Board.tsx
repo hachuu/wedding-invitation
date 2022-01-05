@@ -41,14 +41,14 @@ const writeDiv = styled.div`
 
 const NameInput = styled.input`
 border-top: 5px solid #FDFAF6;
- width: 20%;
+ width: 15%;
  font-family: 'Cafe24SsurroundAir', cursive;
  border-radius: 5px;
 `;
 
 const InputStyle = styled.input`
   border-top: 5px solid #FDFAF6;
-  width: 50%;
+  width: 60%;
   font-family: 'Cafe24SsurroundAir', cursive;
   border-radius: 5px;
 `;

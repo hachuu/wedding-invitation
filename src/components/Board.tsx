@@ -118,7 +118,9 @@ const Board = () => {
       })
       setName('');
       setContent('');
-      getCommetList();
+      const addData = {name: name, comment: content, dateTime: new Date()};
+      const originList = [addData, ...list];
+      setList(originList);
     } else {
       alert('신랑 신부에게 축하메세지를 남겨주세요💌');
     }

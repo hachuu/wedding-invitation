@@ -47,8 +47,8 @@ const ImageDefaultContainer = styled.div`
 
 const DefaultImg = styled.img`
     border-radius: 5px;
-    width: 30%;
-    height:150px;
+    width: 50%;
+    height:250px;
     object-fit: cover;
     margin: 10px 10px 0 0;
 `;

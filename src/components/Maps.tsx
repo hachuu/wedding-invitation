@@ -15,7 +15,7 @@ const Maps = () => {
         textArea.select();
         document.execCommand('copy');
         document.body.removeChild(textArea);
-        alert('복사되었습니다')
+        alert('주소가 복사되었습니다')
     }
 
     const Map = styled.div`
@@ -95,7 +95,7 @@ const Maps = () => {
     useEffect(() => {
         const container = document.getElementById('map');
 		const options = {
-			center: new kakao.maps.LatLng(37.46621315156307, 127.0326723986652),
+			center: new kakao.maps.LatLng(37.47015121972276, 127.03849169864645),
             level: 5
 		};
         const map = new kakao.maps.Map(container, options);
@@ -109,8 +109,14 @@ const Maps = () => {
 
         // 마커가 지도 위에 표시되도록 설정합니다
         marker.setMap(map);
-        console.log('여기왜안나왕')
+        const moveTo  = new kakao.maps.LatLng(37.46621315156307, 127.0326723986652);
+        map.panTo(moveTo);
+
+        kakao.maps.event.addListener(map, 'rightclick', function(mouseEvent: { latLng: any; }) {
+            funCopy();
+        });
     }, []);
+    
 
     return (
         <>

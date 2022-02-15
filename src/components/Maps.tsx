@@ -32,7 +32,7 @@ const Maps = () => {
         margin-left: auto;
         margin: 50px 0px 0px 0px;
         width: 40%;
-        height: 400px;
+        height: 450px;
     `;
     // position: fixed;
     const MapContainer = styled.div`
@@ -61,6 +61,13 @@ const Maps = () => {
         font-weight: normal;
         font-style: normal;
         font-size:25px;
+    `;
+
+    const SubTitle = styled.div`
+        font-family: 'KOTRAHOPE', cursive;
+        font-weight: normal;
+        font-style: normal;
+        font-size:21px;
     `;
 
     const MapCoverDiv = styled.div`
@@ -129,7 +136,8 @@ const Maps = () => {
                 <Title>2022년 5월 28일 12시</Title><br/>
                 <Address>
                     <Title>더 케이 호텔</Title><br/>
-                    <br/>
+                    <SubTitle>컨벤션센터 3층</SubTitle>
+                    <SubTitle>크리스탈볼룸 AB</SubTitle><br/>
                     <AddressP id="address">서울특별시 서초구 바우뫼로 12길 70</AddressP>
                     <AddressP>(구 주소:서울특별시 서초구 양재동 202번지)</AddressP>
                 </Address>

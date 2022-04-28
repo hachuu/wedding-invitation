@@ -91,3 +91,9 @@ git commit -m "fixed untracked files"
 
 2021/12/09
 [Defensive CSS](https://ishadeed.com/article/defensive-css/)
+
+### firebase deploy
+```
+  yarn build
+  firebase deploy
+```

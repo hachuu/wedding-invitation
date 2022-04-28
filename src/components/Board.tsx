@@ -40,21 +40,25 @@ const writeDiv = styled.div`
 `;
 
 const NameInput = styled.input`
-border-top: 5px solid #FDFAF6;
- width: 15%;
- font-family: 'Cafe24SsurroundAir', cursive;
- border-radius: 5px;
-`;
-
-const InputStyle = styled.input`
   border-top: 5px solid #FDFAF6;
-  width: 60%;
+  width: 15%;
   font-family: 'Cafe24SsurroundAir', cursive;
   border-radius: 5px;
 `;
 
+const InputStyle = styled.textarea`
+  height: 20px;
+  border-top: 5px solid #FDFAF6;
+  width: 60%;
+  font-family: 'Cafe24SsurroundAir', cursive;
+  border-radius: 5px;
+  &:focus {
+    min-height: 50px;
+  }
+`;
+
 const ButtonDiv = styled.div`
-font-family: 'Cafe24SsurroundAir', cursive;
+  font-family: 'Cafe24SsurroundAir', cursive;
   font-size: 12px;
   width: 15%;
   background-color: #FDFAF6;

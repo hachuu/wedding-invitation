@@ -51,6 +51,10 @@ const PC = () => {
         <FirstImg src="/images/couple/sunnytwo.jpeg"/>
         <FirstImg src="/images/couple/yellow-shoes.jpeg"/>
         <FirstImg src="/images/couple/frame.jpeg"/>
+        <FirstImg src="/images/couple/IMG_4733.jpeg"/>
+        <FirstImg src="/images/couple/IMG_4789.jpeg"/>
+        <FirstImg src="/images/couple/IMG_3295.jpeg"/>
+        <FirstImg src="/images/couple/IMG_3253.jpeg"/>
       </PageDiv>
       <Footer></Footer>
       </ContainerDiv>

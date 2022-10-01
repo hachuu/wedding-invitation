@@ -112,7 +112,7 @@ useEffect(() => {
   setClickedIndex(0);
  }, []);
 
- const clickImageIndex = useCallback((index) => {
+ const clickImageIndex = useCallback((index: React.SetStateAction<number>) => {
   setClickedIndex(index);
   if (index) document.body.style.overflow = 'hidden';
   else document.body.style.overflow = 'auto';
@@ -156,6 +156,10 @@ useEffect(() => {
           <DefaultImg src="/images/couple/sunnytwo.jpeg" onClick={()=>clickImageIndex(12)}/>
           <DefaultImg src="/images/couple/yellow-shoes.jpeg" onClick={()=>clickImageIndex(13)}/>
           <DefaultImg src="/images/couple/frame.jpeg" onClick={()=>clickImageIndex(14)}/>
+          <DefaultImg src="/images/couple/IMG_4733.jpeg" onClick={()=>clickImageIndex(15)}/>
+          <DefaultImg src="/images/couple/IMG_4789.jpeg" onClick={()=>clickImageIndex(16)}/>
+          <DefaultImg src="/images/couple/IMG_3295.jpeg" onClick={()=>clickImageIndex(17)}/>
+          <DefaultImg src="/images/couple/IMG_3253.jpeg" onClick={()=>clickImageIndex(18)}/>
       </ImageDefaultContainer>
         <SpreadButton onClick={() => setImageActive(!imageActive)}>
           {!imageActive ? '사진 펼쳐서 크게 보기' : '사진 슬라이드로 보기'}
@@ -176,6 +180,10 @@ useEffect(() => {
           <FirstImg src="/images/couple/sunnytwo.jpeg" />
           <FirstImg src="/images/couple/yellow-shoes.jpeg" />
           <FirstImg src="/images/couple/frame.jpeg" />
+          <FirstImg src="/images/couple/IMG_4733.jpeg" />
+          <FirstImg src="/images/couple/IMG_4789.jpeg" />
+          <FirstImg src="/images/couple/IMG_3295.jpeg" />
+          <FirstImg src="/images/couple/IMG_3253.jpeg" />
         </ImageContainer></>
 
       <PopUpImg layerActive={clickedIndex !== 0}>
@@ -194,6 +202,10 @@ useEffect(() => {
           {(clickedIndex === 12) && (<LayerImg src="/images/couple/sunnytwo.jpeg" />)}
           {(clickedIndex === 13) && (<LayerImg src="/images/couple/yellow-shoes.jpeg" />)}
           {(clickedIndex === 14) && (<LayerImg src="/images/couple/frame.jpeg" />)}
+          {(clickedIndex === 15) && (<LayerImg src="/images/couple/IMG_4733.jpeg" />)}
+          {(clickedIndex === 16) && (<LayerImg src="/images/couple/IMG_4789.jpeg" />)}
+          {(clickedIndex === 17) && (<LayerImg src="/images/couple/IMG_3295.jpeg" />)}
+          {(clickedIndex === 18) && (<LayerImg src="/images/couple/IMG_3253.jpeg" />)}
       </PopUpImg></>
   )
 }

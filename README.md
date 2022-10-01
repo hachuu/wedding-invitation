@@ -92,6 +92,11 @@ git commit -m "fixed untracked files"
 2021/12/09
 [Defensive CSS](https://ishadeed.com/article/defensive-css/)
 
+2022/10/02
+```
+yarn install --ignore-engines => yarn node version 무시하고 받는 거지만 이 프로젝트에서는
+package.lock 파일 지우고 npm install 로 진행하기
+```
 ### firebase deploy
 ```
   yarn build
